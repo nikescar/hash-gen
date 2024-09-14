@@ -1,0 +1,19 @@
+[package]
+name = "hash-gen"
+version = "1.0.0"
+authors = ["0xlay <0xlay.lab@gmail.com>"]
+description = "A command-line tool for generating cryptographic hashes (MD5, SHA1, SHA-256, SHA-512)"
+repository = "https://github.com/0xlay/hash-gen"
+readme = "README.md"
+license = "MIT OR Apache-2.0"
+keywords = ["cli, tools, hash, cryptography"]
+categories = ["command-line-utilities, development-tools, cryptography"]
+edition = "2021"
+
+[dependencies]
+clap = { version = "4.5.17", features = ["derive"] }
+digest = "0.10.7"
+hex = "0.4.3"
+md-5 = "0.10.6"
+sha1 = "0.10.6"
+sha2 = "0.10.8"

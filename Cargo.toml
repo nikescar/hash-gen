@@ -8,8 +8,8 @@ documentation = "https://docs.rs/hash-gen"
 repository = "https://github.com/0xlay/hash-gen"
 readme = "README.md"
 license = "MIT OR Apache-2.0"
-keywords = ["cli, tools, hash, cryptography"]
-categories = ["command-line-utilities, development-tools, cryptography"]
+keywords = ["cli", "tools", "hash", "cryptography"]
+categories = ["command-line-utilities", "development-tools", "cryptography"]
 edition = "2021"
 
 [dependencies]

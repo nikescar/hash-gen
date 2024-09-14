@@ -1,4 +1,5 @@
 # The hash-gen utility
+![](.github/assets/header.png)
 
 This utility is a command-line tool for generating cryptographic hashes of files using algorithms like MD5, SHA-1, SHA-256, and SHA-512.
 

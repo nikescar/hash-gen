@@ -1,7 +1,7 @@
 # The hash-gen utility
 ![](.github/assets/header.png)
 
-This utility is a command-line tool for generating cryptographic hashes of files using algorithms like MD5, SHA-1, SHA-256, and SHA-512.
+This utility is a command-line tool for generating cryptographic hashes of files or buffers using algorithms like MD5, SHA-1, SHA-256, and SHA-512.
 
 ## Features
 
@@ -13,7 +13,7 @@ This utility is a command-line tool for generating cryptographic hashes of files
 
 ### Via Cargo
 
-You can easily install the utility directly from [crates.io](https://crates.io) using Cargo, Rust’s package manager. To install the latest version, run:
+You can easily install the utility directly from [crates.io](https://crates.io/crates/hash-gen) using Cargo, Rust’s package manager. To install the latest version, run:
 ```bash
 cargo install hash-gen
 ```
@@ -30,25 +30,29 @@ cargo build --release
 The binary will be available in the target/release directory.
 
 ## Usage
-Once installed, you can use the utility from the command line to generate cryptographic hashes for files using different algorithms.
+Once installed, you can use the utility from the command line to generate cryptographic hashes for files or buffers using different algorithms.
 
 ### Basic Commands
 
 MD5 hash
 ```bash
 hash-gen md5 --path /path/to/file.txt
+hash-gen md5 --buffer "Hello world"
 ```
 SHA1 hash
 ```bash
 hash-gen sha1 --path /path/to/file.txt
+hash-gen sha1 --buffer "Hello world"
 ```
 SHA256 hash
 ```bash
 hash-gen sha256 --path /path/to/file.txt
+hash-gen sha256 --buffer "Hello world"
 ```
 SHA512 hash
 ```bash
 hash-gen sha512 --path /path/to/file.txt
+hash-gen sha512 --buffer "Hello world"
 ```
 
 ## Generate documentation
